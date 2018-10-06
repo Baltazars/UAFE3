@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "TumKisiler";
+}
+
+<h2>TumKisiler</h2>
+
+<style>
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+    .modal-full .modal-content {
+        min-height: 100vh;
+    }
+</style>
+
+<div class="modal fade " id="kisiekle" tabindex="-1" role="banner" aria-labelledby="kisiekle" aria-hidden="true">
+    <div class="modal-dialog modal-full">
+        <div class="modal-content">
+            @Html.Partial("KisiEkle")
+            <!-- /.modal-content -->
+        </div>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!--
+    <div width="100%">
+            <div width="66%"></div>
+            <div width="34%">
+                <div width="25%"></div>
+                <div width="25%"></div>
+                <div width="25%"></div>
+                <div width="25%" style="text-align:right;margin:1%">
+                    <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Primary</button>
+                </div>
+
+
+        </div>
+
+
+    </div>-->
+
+@Html.Partial("KisilerTablosu")
